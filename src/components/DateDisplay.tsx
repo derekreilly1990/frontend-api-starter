@@ -1,5 +1,6 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
+import styled from 'styled-components'
 
 const DateDisplay: React.FC = () => {
     const [date, setDate] = useState('')
@@ -15,10 +16,20 @@ const DateDisplay: React.FC = () => {
     }, [])
 
     return (
-        <div style={{ position: 'relative', width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', flexDirection: 'column' }}>
-            <span style={{ color: 'orange' }}>{date}</span>
-        </div>
+        <DateWrapper>
+            <DateText>{date}</DateText>
+        </DateWrapper>
     )
 }
-
+const DateWrapper = styled.div`
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+`
+const DateText = styled.p`
+    font-weight: 800;
+`
 export default DateDisplay
