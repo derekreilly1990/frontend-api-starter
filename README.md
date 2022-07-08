@@ -1,17 +1,36 @@
-<h1 align="center">New React App</h1>
+<h1 align="center">React Frontend Starter</h1>
 
-<br />
+This is a project starter which includes some basics like:
+- Routing
+- Axios
+- Redux
+- sass
+- styled-components
 
-This is a blank README file that you can customize at your needs.\
-Describe your project, how it works and how to contribute to it.
+## 💪 The Challenge 
+1. Create a Github Profile Page
+   1. Use the GitHub api to fetch details from your Github account(The base url and a
+      sample url for getting your user are in api-constants.ts and example 
+      usage in Home.tsx) 
+   2. Create a nice looking profile page with your avatar/profilepicture and 
+      the details you feel should be on a profile page. use whichever 
+      styling method/library you are comfortable with, we encourage using 
+      CSS rather than a Component library(Have some fun 😃 )
+2. Create a seperate page listing the most popular GitHub repo's
+   1. This should be created using CSS and not a component library. We 
+      challenge you to use CSS Grid or Flex 
+   2. Display Whatever fields you feel are important, include a link to the repo
+   
+3. Create Routes and Buttons to Link the 2 pages.
 
-<br />
+### 🏋️ Stretch Goals:
+1. Authenticate against Github API
+2. Ensure everything is fully typed(no use of any)
+3. List 10 of your Repos On Your Profile page
 
 # 🚀 Available Scripts
 
 In the project directory, you can run:
-
-<br />
 
 ## ⚡️ start
 
@@ -28,7 +47,6 @@ yarn start
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-<br />
 
 ## 🧪 test
 
@@ -44,7 +62,6 @@ yarn test
 
 Launches the test runner in the interactive watch mode.
 
-<br />
 
 ## 🦾 build
 
@@ -63,8 +80,6 @@ It correctly bundles React in production mode and optimizes the build for the be
 
 The build is minified and the filenames include the hashes.
 
-<br />
-
 ## 🧶 lint
 
 ```
@@ -78,8 +93,6 @@ yarn lint
 ```
 
 Creates a `.eslintcache` file in which ESLint cache is stored. Running this command can dramatically improve ESLint's running time by ensuring that only changed files are linted.
-
-<br />
 
 ## 🎯 format
 
@@ -95,7 +108,6 @@ yarn format
 
 Checks if your files are formatted. This command will output a human-friendly message and a list of unformatted files, if any.
 
-<br />
 
 # 🧬 Project structure
 
@@ -128,13 +140,5 @@ This is the structure of the files in the project:
     ├── README.md
     └── tsconfig.json
 ```
-
-# 📖 Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-#
 
 <p align="center">Bootstrapped with Create React App.</p>

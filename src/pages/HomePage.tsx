@@ -6,9 +6,9 @@ import styled from 'styled-components'
 
 const HomePage: React.FC = () => {
     useEffect(() => {
-        CustomAxios.get(baseUrl + getUserDataParam('derekreilly1990')).then(
-            (response) => console.log(response.data)
-        )
+        CustomAxios.get<any>(
+            baseUrl + getUserDataParam('derekreilly1990')
+        ).then((response) => console.log(response.data))
     }, [])
 
     return (
